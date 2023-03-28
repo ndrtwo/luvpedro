@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.media.css">
+    </link>
+    <title>MAIL</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <section class="main-webpage-content" id="main_webpage_content">
+        <div class="text_and_letter_div" id="text_and_letter_div">
+            <h1>click on the letter to open it!</h1>
+            <img src="./imgs/letter.png" alt="letter icon" class="letter_img" id="letter_img">
+        </div>
+
+        <div class="auth_div" id="auth_div">
+            <div class="auth_text">
+                <h1>INSIRA A PASSWORD</h1>
+                <p></p>
+            </div>
+            <div class="auth_image">
+                <img src="./imgs/lock.png" alt="lock image" class="lock_img">
+            </div>
+            <form class="auth_form">
+                <input type="password" name="password_input" id="password_input" class="password_input" placeholder="Password">
+                <button class="password_submit" id="password_submit">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+            </form>
+            <div class="password_error_div" id="password_error_div">
+                <ion-icon name="alert-circle-outline"></ion-icon>
+                <p><b>ERRO:</b> Password inválida</p>
+            </div>
+        </div>
+
+        <div class="letter_content_div" id="letter_content_div">
+            <div class="letter_header">
+                <h1 class="letter_date" id="letter_date">0000-0-0</h1>
+                <ion-icon name="close-circle-outline" id="close_icon"></ion-icon>
+            </div>
+            <div class="letter_body">
+                <p class="letter_text" id="letter_text">lorem ipsum dolor</p>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/letter.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+
+    .text_and_letter_div h1 {
+        inline-size: 70%;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .auth_div {
+        width: 90vw;
+    }
+
+    .letter_content_div {
+        min-height: 30vh;
+        width: 90vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
