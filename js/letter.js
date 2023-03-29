@@ -1,6 +1,6 @@
 const getCurrentDate = ()=> {
     const date = new Date()
-    let day = date.getDay()
+    let day = date.getDate()
     let month = date.getMonth() + 1
     let year = date.getFullYear()
 
@@ -9,6 +9,7 @@ const getCurrentDate = ()=> {
 }
 
 let dateToday = getCurrentDate()
+console.log(dateToday);
 
 const renderData = (data)=> {
     const letterDate = document.getElementById('letter_date')
